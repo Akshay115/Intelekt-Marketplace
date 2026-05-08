@@ -16,7 +16,7 @@ type ServicePackageCardProps = {
   description: string;
   price: string;
   timeline: string;
-  outcomes: string[];
+  outcomes: readonly string[];
 };
 
 export function ServicePackageCard({

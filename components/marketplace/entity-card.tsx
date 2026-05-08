@@ -18,7 +18,7 @@ type EntityCardProps = {
   type: string;
   description: string;
   metric: string;
-  tags: string[];
+  tags: readonly string[];
   icon?: LucideIcon;
 };
 

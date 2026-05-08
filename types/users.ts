@@ -1,6 +1,11 @@
 import type { DatabaseRecord, ISODateTime, SoftDeleteFields, UUID } from "./database";
 
-export type UserRole = "user" | "admin" | "moderator";
+export type UserRole =
+  | "client"
+  | "freelancer"
+  | "agency_owner"
+  | "product_owner"
+  | "admin";
 export type UserStatus = "active" | "invited" | "suspended" | "deleted";
 export type OrganizationType = "client" | "agency" | "vendor" | "admin";
 export type OrganizationStatus = "active" | "invited" | "suspended" | "archived";
